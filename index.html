@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vacation Survey</title>
+</head>
+<body>
+  <div id="container">
+    <form action="index.html">
+      <label for="name">
+        What is your full name ?
+      </label>
+      <br>
+      <input type="text" name= "fullName" placeholder = "Full name" id="name" pattern="[A-Za-z]" required>
+      <br>
+      <label for="travel">
+        Do you like travelling ?
+        <br>
+        <input type="radio" name = "choice">Yes
+        <input type="radio" name= "choice"> No
+        <input type="radio" name="choice"> Not Sure
+      </label>
+      <br>
+      <label for="frequency">
+        How often do you travel ?
+        <br>
+        <input type="radio" name="times" id="week">Weekly
+        <input type="radio" name="times" id="month">Monthly
+        <input type="radio" name="times" id="year">Annually
+        <input type="radio" name="times" id="none">Never
+      </label>
+      <br>
+      <label for="money">
+        How much are you willing to spend on travel?
+        <br>
+        <input type="radio" name="price" id="low">$0 -$500
+        <input type="radio" name="price" id="mid">$500 -$1000
+        <input type="radio" name="price" id="high">$1000 -$5000
+        <input type="radio" name="price" id="veryhigh"> Above $5000
+      </label>
+      <br>
+      <label for="">
+        What type of holidays do you prefer?
+        <br>
+        <input type="checkbox" name="Romantic">Romantic
+        <input type="checkbox" name="Camping">Camping
+        <input type="checkbox" name="Adventure">Adventure
+        <input type="checkbox" name="Relaxation">Relaxation
+        <input type="checkbox" name="Family">Family
+        <input type="checkbox" name="Other">Other,please specify <input type="text" name="other">
+        <br>
+
+
+
+
+      </label>
+      <br>
+      <button type="button" name="Submit" form="">Submit
+       </button>
+
+    </form>
+  </div>
+</body>
+</html>
