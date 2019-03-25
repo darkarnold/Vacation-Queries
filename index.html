@@ -5,44 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!--<link rel="stylesheet" href="css/style.css"> -->
+
   <title>Vacation Survey</title>
 </head>
 
 <body>
 
 
-  <div class="container">
-    --  <div id="image">
-      <img src="img/image.jpg" alt="">
-    </div>
+  <div class ="container">
 
 
     <form action="index.html" class="col-12">
       <div class="form-group">
         <label for="name">
-          What is your full name ?
+         What is your full name ?
         </label>
         <br>
-        <input type="text" class="form-control" name="fullName" placeholder="Full name" id="name" pattern="[A-Za-z]" required>
+        <input type="text" class="form-control" name="fullName" placeholder="Full name" id="name" pattern="[A-Za-z]" value="" required >
         <br>
         <div class="form-check">
-          Do you like travelling ?
+           Do you like travelling ?
           <br>
 
-          <input type="radio" class="form-check-input" name="choice">
+          <input type="radio" class="form-check-input" name="choice" id = "y" value = "1">
           <label class="form-check-label" for="Yes">
             Yes
           </label>
           <br>
-          <input type="radio" class="form-check-input" name="choice">
+          <input type="radio" class="form-check-input" name="choice" id = "n" value = "2">
           <label class="form-check-label" for="No">
             No
           </label>
           <br>
-          <input type="radio" class="form-check-input" name="choice">
+          <input type="radio" class="form-check-input" name="choice" id = "ns" value = "3">
           <label class="form-check-label" for="Not Sure">
             Not Sure
           </label>
@@ -51,22 +49,22 @@
           How often do you travel ?
           <br>
 
-          <input type="radio" class="form-check-input" name="times" id="week">
+          <input type="radio" class="form-check-input" name="times" id="week" value = "1">
           <label class="form-check-label" for="Weekly">
             Weekly
           </label>
           <br>
-          <input type="radio" class="form-check-input" name="times" id="month">
+          <input type="radio" class="form-check-input" name="times" id="month" value ="2">
           <label class="form-check-label" for="Monthly">
             Monthly
           </label>
           <br>
-          <input type="radio" class="form-check-input" name="times" id="year">
+          <input type="radio" class="form-check-input" name="times" id="year" value="3">
           <label class="form-check-label" for="Annually">
             Annually
           </label>
           <br>
-          <input type="radio" class="form-check-input" name="times" id="none">
+          <input type="radio" class="form-check-input" name="times" id="none" value="4">
           <label class="form-check-label" for="Never">
             Never
           </label>
@@ -76,22 +74,22 @@
           How much are you willing to spend on travel?
           <br>
 
-          <input type="radio" class="form-check-input" name="price" id="low">
+          <input type="radio" class="form-check-input" name="price" id="low" value="1">
           <label class="form-check-label" for="0">
             $0 -$500
           </label>
           <br>
-          <input type="radio" class="form-check-input" name="price" id="mid">
+          <input type="radio" class="form-check-input" name="price" id="mid" value = "2">
           <label class="form-check-label" for="1000">
             $500 -$1000
           </label>
           <br>
-          <input type="radio" class="form-check-input" name="price" id="high">
+          <input type="radio" class="form-check-input" name="price" id="high" value = "3">
           <label class="form-check-label" for="5000">
             $1000 -$5000
           </label>
           <br>
-          <input type="radio" class="form-check-input" name="price" id="veryhigh">
+          <input type="radio" class="form-check-input" name="price" id="veryhigh" value = "4">
           <label class="form-check-label" for="Above">
             Above $5000
           </label>
@@ -136,13 +134,24 @@
 
 
       </div>
-      <button type="button" name="Submit" class="btn">Submit
-      </button>
+<div id="submit">
+  <button type="button" name="Submit" class="btn">Submit
+  </button>
+
+</div>
 
     </form>
-  </div>
+    <br>
+    <br>
+    <div class="suggestions">
+
+    </div>
+
+      </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
