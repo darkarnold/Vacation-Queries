@@ -15,10 +15,8 @@ body{
   padding: 16px;
   width: 320px;
   border: 2px solid snow;
-
   background-color:rgba(118, 176, 255,0.7);
   z-index: -1;
-
   justify-content: center;
 
 
@@ -33,10 +31,12 @@ body{
   background: #f1f1f1;
 
 }
+
 .suggestions{
   background-color: black;
   width:inherit;
   color: white;
+  height:50px;
 }
 
 input[type=text]:focus{
@@ -44,17 +44,17 @@ input[type=text]:focus{
   outline: none;
 }
 
-.btn{
-  background-color:#4CAF50;
+.container button{
+  background-color:green;
   border-radius: 12px;
   color: white;
   padding: 15px 32px;
-  border: none;
+  border: 2px solid #336600;
   cursor: pointer;
   width: 100%;
   opacity: 1;
 }
 
-.btn:hover{
+button:hover{
   opacity: 1;
 }
